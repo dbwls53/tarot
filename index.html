@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./tarot cards/이모지.png" type="image/png">
+    <title>오늘의 타로 카드</title>
+    <link rel="stylesheet" href="tarot.css">
+</head>
+
+<body>
+    <div class="start-screen" id="start-screen">
+        <div class="title-area">
+            <h1>오늘의 타로 카드</h1>
+            <p>마음을 비우고, 당신을 위한 운명의 카드를 뽑아보세요</p>
+        </div>
+
+        <div class="deck-preview" id="deck">
+        </div>
+
+        <button id="start-btn" class="start-btn">오늘의 타로 뽑기</button>
+    </div>
+
+    <div class="result-screen" id="result-screen" style="display: none;">
+        <h2 id="result-title">카드 이름</h2>
+        <div class="result-card-box">
+            <img id="result-img" src="" alt="타로 카드" class="result-image">
+        </div>
+        <div class="result-desc-box">
+            <p id="result-desc">이곳에 카드의 운세 결과가 나옵니다.</p>
+        </div>
+        <button id="retry-btn" class="start-btn">다시 뽑기</button>
+    </div>
+
+    <script src="tarot.js"></script>
+</body>
+
+</html>
